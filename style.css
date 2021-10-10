@@ -5,6 +5,7 @@
 
 html {
   font-family: "Roboto", sans-serif;
+  color: #1f2937;
 }
 
 img {
@@ -74,19 +75,29 @@ nav {
 .hero__text-secondary {
   font-size: 18px;
   color: #e5e7eb;
-  margin-bottom: 10px;
+  margin: 12px 0 18px;
 }
 
 .signup {
   background-color: #3882f6;
   color: inherit;
   border-radius: 5px;
-  padding: 0.25rem 1.5rem;
+  padding: 0.5rem 1.2rem;
+}
+
+.signup:hover {
+  background-color: #69a0f6;
 }
 
 .hero__signup {
   outline: none;
   border: none;
+}
+
+.hero__img {
+  /* box-shadow: 0 0 40px rgba(157, 188, 236, 0.7); */
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+  transform: perspective(80px) rotateY(-1deg);
 }
 
 main {
@@ -99,7 +110,7 @@ main {
 .cards {
   margin-bottom: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 32px;
 }
 
@@ -119,14 +130,18 @@ main {
 }
 
 .card__img {
-  border: 2px solid #3882f6;
+  /* border: 1px solid #3882f6; */
+  box-shadow: 0 3px 10px #0b3579;
   border-radius: 12px;
   overflow: hidden;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+  width: 180px;
+  height: 180px;
 }
 
 .card__img img {
   height: 100%;
+  object-fit: cover;
 }
 
 .card__caption {
@@ -178,7 +193,10 @@ main {
 .content-wrapper {
   max-width: 800px;
   margin: 0 auto;
-  padding: 60px;
+}
+
+.sign-up__content {
+  padding: 60px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
